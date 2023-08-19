@@ -7,11 +7,9 @@ interface Props {
 const WeeklyData = ({ calories }: Props) => {
     return (
         <div>
-            <div>
-                <div className="card">
-                    <div className="card-body">
-                        Total calories burnt this week: {calories}
-                    </div>
+            <div className="card">
+                <div className="card-body">
+                    Total calories burnt this week: {calories}
                 </div>
             </div>
         </div>
