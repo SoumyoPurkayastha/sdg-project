@@ -1,27 +1,9 @@
-# React + TypeScript + Vite
+This is a simple fitness tracking app.
+It has two fuctionalities:
+   1. Adding a workout report for a day
+   2. Showing the total calories burnt in a week
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The first one is about doing the basic react things like handling forms, managing state, mapping to components, etc.
+The second functionality is about passing data from one component to another through a parent component.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Due to time binds, I could not finish the second functionality, so it only updates one cycle after every input. If you add 5 workouts, it will only show the total for the first four.
